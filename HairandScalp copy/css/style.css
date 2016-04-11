@@ -1,0 +1,91 @@
+@font-face {
+
+	font-family: "head";
+	src: url('../fonts/HelveticaNeueLTPro-MdCn.otf') format("opentype"); 
+}
+
+@font-face {
+
+	font-family: "subhead";
+	src: url('../fonts/HelveticaNeueLTPro-Md 3.otf') format("opentype"); 
+}
+
+body {
+
+	margin: 0;
+	background-image: url('../images/hair_bg.png');
+	background-size: cover;
+
+}
+
+
+
+/*****
+header and footer fixed images
+******/
+
+.fixed,
+.fixed img {
+
+	width: 100%;
+	position: fixed;
+	top: 0;
+
+}
+
+.footer,
+.footer img {
+
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+
+}
+
+
+
+.main {
+
+	margin: 14em 0em 10em 0em;
+	background-color: black;
+	background:rgba(0,0,0,.55);
+	color: white;
+	
+}
+
+.main h1, p {
+
+	margin: .3em 0em .3em 0em;
+	text-align: center;
+	
+}
+
+.main h1 {
+
+	font-size: 1.4em;
+	font-family: "head";
+	padding: 1em;
+}
+
+
+.main p {
+
+	font-size: .8em;
+	margin: 0 8em 0 6em;
+	font-family: "head";
+}
+
+
+.main a {
+
+	text-decoration: none;
+	background-color: red;
+	color: white;
+	font-family: "head";
+	font-size: 1em;
+	padding: .5em;
+	margin: 2em 7.8em 2em 7.8em;
+	display: inline-block;
+
+}
+

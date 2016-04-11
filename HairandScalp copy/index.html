@@ -1,0 +1,52 @@
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+	<body ng-app="assign_8">
+
+
+		<!-- Fixed header at top -->
+			<div class="fixed header">
+				<img src="images/header.png">
+			</div>
+
+			<div class="main" ng-controller="myController">
+
+
+
+				<div ng-click="dummyfunct()">
+					<div>
+						<p>{{ dummy[0].name }}</p>
+						<p>{{ dummy[0].name2 }}</p>
+						<button ng-click="changebool(dummy[0])">Yes</button>
+					</div>
+				</div>
+
+
+				<!-- <div class="container" ng-show= "mainvis">
+					<div ng-repeat="app in main">
+						<h1> {{ app.head }}  </h1>
+						<p> {{ app.para }}</p>
+						<button ng-click="starts1()"> {{app.submit}} </button>
+					</div>
+				</div> -->
+
+				<!-- <div ng-show="mainvis">
+					<h1>Wooohooo</h1>
+				</div> -->
+
+				<!-- <div class="container" ng-repeat=" app in second" ng-hide="isVisible"> -->
+
+
+			</div>
+
+		<!-- Fixed footer at bottom -->
+			<div class="footer">
+				<img src="images/footer.png">
+			</div>
+
+
+		<script src="javascript/angular.js"></script>
+		<script src="javascript/app.js"></script>
+	</body>
+</html>
