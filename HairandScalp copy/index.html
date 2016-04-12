@@ -18,14 +18,15 @@
 					<div>
 						<p>{{ main[counter].head }}</p>
 						<p>{{ main[counter].para }}</p>
-						<div class="button"><button> {{main[counter].button_1}} </button></div>
-						<div class="button"><button> {{main[counter].button_2}} </button></div>
-						<div class="button"><button> {{main[counter].button_3}} </button></div>
-						<div class="button"><button> {{main[counter].button_4}} </button></div>
-						<div class="button"><button> {{main[counter].button_5}} </button></div>
-						<div class="button"><button> {{main[counter].button_6}} </button></div>
+						 <!-- ng-show="somefunction(main.thing)" -->
+						<div class="button" ng-show="invis"><button> {{main[counter].button_1}} </button></div>
+						<div class="button" ng-show="invis"><button> {{main[counter].button_2}} </button></div>
+						<div class="button" ng-show="invis"><button> {{main[counter].button_3}} </button></div>
+						<div class="button" ng-show="invis"><button> {{main[counter].button_4}} </button></div>
+						<div class="button" ng-show="invis"><button> {{main[counter].button_5}} </button></div>
+						<div class="button" ng-show="invis"><button> {{main[counter].button_6}} </button></div>
+					<div class="button"><button ng-click="changebool(main[counter])">{{ main[counter].submit }}</button></div>
 					</div>
-					<button class="button" ng-click="changebool(main[counter])">{{ main[counter].submit }}</button>
 				</div>
 
 
