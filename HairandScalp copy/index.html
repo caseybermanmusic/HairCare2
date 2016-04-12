@@ -13,13 +13,19 @@
 			<div class="main" ng-controller="myController">
 
 
-
+				<!-- ng-show="main[0].bool" -->
 				<div ng-click="dummyfunct()">
 					<div>
-						<p>{{ dummy[0].name }}</p>
-						<p>{{ dummy[0].name2 }}</p>
-						<button ng-click="changebool(dummy[0])">Yes</button>
+						<p>{{ main[counter].head }}</p>
+						<p>{{ main[counter].para }}</p>
+						<div class="button"><button> {{main[counter].button_1}} </button></div>
+						<div class="button"><button> {{main[counter].button_2}} </button></div>
+						<div class="button"><button> {{main[counter].button_3}} </button></div>
+						<div class="button"><button> {{main[counter].button_4}} </button></div>
+						<div class="button"><button> {{main[counter].button_5}} </button></div>
+						<div class="button"><button> {{main[counter].button_6}} </button></div>
 					</div>
+					<button class="button" ng-click="changebool(main[counter])">{{ main[counter].submit }}</button>
 				</div>
 
 
@@ -29,10 +35,6 @@
 						<p> {{ app.para }}</p>
 						<button ng-click="starts1()"> {{app.submit}} </button>
 					</div>
-				</div> -->
-
-				<!-- <div ng-show="mainvis">
-					<h1>Wooohooo</h1>
 				</div> -->
 
 				<!-- <div class="container" ng-repeat=" app in second" ng-hide="isVisible"> -->
